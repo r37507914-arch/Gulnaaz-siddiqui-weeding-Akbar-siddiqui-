@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gulnaaz &amp; Akbar · Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--page:#3a0f18;--gold:#e6c877;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#220a10}}
+:root[data-theme="dark"]{--page:#220a10}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{margin:0;height:100%;background:var(--page);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.stage{width:min(100vw,calc(100svh*600/1040));aspect-ratio:600/1040;container-type:inline-size;position:relative}
+.card{--u:calc(100cqw/600);position:absolute;inset:0;overflow:hidden;background-color:#f1ead9;background-image:radial-gradient(circle at 25% 20%,rgba(201,168,106,.2) 0 2px,transparent 3px),radial-gradient(circle at 75% 70%,rgba(201,168,106,.2) 0 2px,transparent 3px);background-size:calc(var(--u)*34) calc(var(--u)*34)}
+.card svg{position:absolute;left:0;top:0;width:100%;height:100%}
+.c{position:absolute;left:calc(var(--u)*92);right:calc(var(--u)*92);top:calc(var(--u)*90);text-align:center;color:#5a3a3a;font:600 calc(var(--u)*16)/1.4 'Cormorant Garamond',serif}
+.ar{font-family:'Amiri',serif;font-size:calc(var(--u)*30);color:#8c6a2a;direction:rtl;line-height:1.4;text-shadow:0 0 12px rgba(230,200,119,.9)}
+.s14{font-size:calc(var(--u)*14)}.s15{font-size:calc(var(--u)*15)}.s16{font-size:calc(var(--u)*16)}
+.dec{font-family:'Cinzel Decorative',serif;font-weight:700;color:#6e1b28}
+.nm{font-size:calc(var(--u)*31);line-height:1.1;margin-top:calc(var(--u)*16);background:linear-gradient(100deg,#6e1b28 0 40%,#c99a3a 50%,#6e1b28 60% 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:sh 5s linear infinite}
+.nm2{margin-top:0}
+.wd{font-size:calc(var(--u)*22);margin:calc(var(--u)*8) 0}
+.pg{display:flex;align-items:center;justify-content:center;gap:calc(var(--u)*10);margin-top:calc(var(--u)*16);font-size:calc(var(--u)*18);letter-spacing:.12em;color:#6e1b28;font-weight:700}
+.pg i{width:calc(var(--u)*70);height:1px;background:#c9a86a}
+.row{display:flex;justify-content:space-between;margin-top:calc(var(--u)*10);padding:0 calc(var(--u)*6)}
+.row div{width:48%}
+.h{font-size:calc(var(--u)*17)}
+.go{display:inline-block;margin-top:calc(var(--u)*8);padding:calc(var(--u)*6) calc(var(--u)*18);border:1px solid #c9a86a;border-radius:999px;color:#6e1b28;text-decoration:none;font-size:calc(var(--u)*14);letter-spacing:.1em;background:rgba(255,255,255,.55)}
+.orn{position:absolute;left:0;right:0;bottom:calc(var(--u)*92);display:flex;justify-content:center;gap:calc(var(--u)*10);align-items:center}
+.orn b{width:calc(var(--u)*9);height:calc(var(--u)*9);background:#c9a86a;transform:rotate(45deg)}
+.orn b:nth-child(2){width:calc(var(--u)*13);height:calc(var(--u)*13);background:#6e1b28}
+.r{opacity:0}
+.open .r{animation:up 1s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d)}
+@keyframes up{from{opacity:0;transform:translateY(calc(var(--u)*16))}to{opacity:1;transform:none}}
+@keyframes sh{to{background-position:-150% 0}}
+.arch{stroke-dasharray:1;stroke-dashoffset:1}
+.open .arch{animation:draw 3s ease-out .2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.sw{transform-box:fill-box;transform-origin:50% 0;animation:swing 4.5s ease-in-out infinite alternate;filter:drop-shadow(0 0 6px rgba(255,160,60,.85))}
+@keyframes swing{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+.sway{transform-box:fill-box;transform-origin:50% 0;animation:swing 6s ease-in-out infinite alternate}
+.rose{transform-box:fill-box;transform-origin:50% 50%;animation:bob 7s ease-in-out infinite alternate}
+@keyframes bob{from{transform:rotate(-4deg) scale(1)}to{transform:rotate(4deg) scale(1.05)}}
+.p{position:absolute;top:calc(var(--u)*-20);border-radius:100% 0 100% 0;background:radial-gradient(circle at 30% 30%,#ffd3cf,#ef8f93);opacity:.85;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{to{transform:translate3d(calc(var(--u)*var(--x)),calc(var(--u)*1080),0) rotate(540deg)}}
+.sp{position:absolute;width:calc(var(--u)*7);height:calc(var(--u)*7);background:#d9b25a;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:tw 2.8s ease-in-out infinite;pointer-events:none}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.2)}}
+#ov{position:fixed;inset:0;z-index:20;background:radial-gradient(circle at 50% 40%,#5a1623,#2a0a11);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#f6ebd4;font-family:'Cormorant Garamond',serif;padding:24px;transition:opacity 1s,transform 1s}
+#ov.gone{opacity:0;transform:scale(1.15);pointer-events:none}
+#ov small{letter-spacing:.35em;font-size:12px;color:var(--gold);text-transform:uppercase}
+#ov h1{font:700 clamp(30px,9vw,46px)/1.15 'Cinzel Decorative',serif;margin:18px 0 6px;color:var(--gold)}
+#ov p{margin:0 0 30px;font-size:19px}
+#ov button{background:transparent;color:var(--gold);border:1.5px solid var(--gold);border-radius:999px;padding:14px 34px;font:600 15px 'Cormorant Garamond',serif;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 12px rgba(230,200,119,0)}0%{box-shadow:0 0 0 0 rgba(230,200,119,.5)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.r{opacity:1}.arch{stroke-dashoffset:0}.p,.sp{display:none}}
+</style>
+</head>
+<body>
+<div id="ov">
+  <svg width="46" height="46" viewBox="0 0 36 36" aria-hidden="true"><path d="M22 6a12 12 0 1 0 0 24a9.5 9.5 0 1 1 0-24z" fill="#e6c877"/></svg>
+  <small>You are cordially invited</small>
+  <h1>Gulnaaz &amp; Akbar</h1>
+  <p>Wedding Invitation</p>
+  <button id="go" type="button">Open Invitation</button>
+</div>
+
+<div class="stage" id="stage">
+<div class="card" id="card">
+<svg viewBox="0 0 600 1040" aria-hidden="true">
+<defs>
+<linearGradient id="glow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9a0"/><stop offset="1" stop-color="#ee8a3a"/></linearGradient>
+<symbol id="ln" viewBox="0 0 60 120"><path d="M30 0V16" stroke="#7a4a2e" stroke-width="2"/><path d="M12 30Q30 8 48 30Z" fill="#8a5a3c"/><path d="M12 30H48L53 88Q30 102 7 88Z" fill="url(#glow)" stroke="#7a4a2e" stroke-width="2"/><path d="M30 30V94M20 30L16 92M40 30L44 92" stroke="#7a4a2e" stroke-width="1.5" fill="none"/><rect x="19" y="92" width="22" height="9" rx="2" fill="#8a5a3c"/><path d="M30 101V112" stroke="#7a4a2e" stroke-width="2"/></symbol>
+<symbol id="rs" viewBox="-50 -50 100 100"><ellipse cx="-30" cy="22" rx="22" ry="9" fill="#8aa68a" transform="rotate(-30 -30 22)"/><ellipse cx="30" cy="26" rx="22" ry="9" fill="#7d9b7d" transform="rotate(30 30 26)"/><circle r="30" fill="#f2a9a2"/><circle r="23" fill="#ec918c"/><circle r="16" fill="#e47e7e"/><circle r="9" fill="#d96a6e"/><path d="M-14 -6Q0 -18 14 -6M-9 4Q0 -4 9 4" stroke="#c9565c" stroke-width="2" fill="none"/></symbol>
+</defs>
+<g id="mg"></g>
+<path d="M58 1010V360C58 255 160 200 214 160C250 133 282 100 300 40C318 100 350 133 386 160C440 200 542 255 542 360V1010Z" fill="#fbf8f1" stroke="#c9a86a" stroke-width="2.5" pathLength="1" class="arch"/>
+<path d="M70 1000V362C70 264 166 212 222 172C255 148 285 118 300 68C315 118 345 148 378 172C434 212 530 264 530 362V1000Z" fill="none" stroke="#d8bf8a" stroke-width="1"/>
+<g class="rose"><use href="#rs" x="-30" y="-24" width="130" height="130"/></g>
+<g class="rose" style="animation-delay:-2s"><use href="#rs" x="500" y="-34" width="140" height="140"/></g>
+<g class="rose" style="animation-delay:-3s"><use href="#rs" x="-36" y="930" width="130" height="130"/></g>
+<g class="rose" style="animation-delay:-1s"><use href="#rs" x="508" y="940" width="120" height="120"/></g>
+<g class="rose" style="animation-delay:-4s"><use href="#rs" x="-18" y="520" width="70" height="70"/></g>
+<g class="rose" style="animation-delay:-5s"><use href="#rs" x="548" y="560" width="70" height="70"/></g>
+<g class="sw"><use href="#ln" x="16" y="150" width="62" height="124"/></g>
+<g class="sw" style="animation-delay:-1.5s"><use href="#ln" x="92" y="54" width="42" height="84"/></g>
+<g class="sw" style="animation-delay:-2.5s"><use href="#ln" x="522" y="150" width="62" height="124"/></g>
+<g class="sw" style="animation-delay:-3.5s"><use href="#ln" x="466" y="54" width="42" height="84"/></g>
+</svg>
+
+<div class="c">
+  <div class="ar r" style="--d:.6s">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+  <div class="r" style="--d:1s;margin-top:calc(var(--u)*8)">In the name of Allah,<br>the Most Beneficent, the Most Merciful.</div>
+  <div class="r" style="--d:1.3s;margin-top:calc(var(--u)*10)">We are pleased to invite you to the<br>Wedding ceremony of our beloved children.</div>
+  <div class="dec nm r" style="--d:1.7s">Gulnaaz Siddiqui</div>
+  <div class="s14 r" style="--d:1.9s;margin-top:calc(var(--u)*4)">Daughter of Mr. [FATHER] &amp; Mrs. [MOTHER] Siddiqui</div>
+  <div class="dec wd r" style="--d:2.2s">Weds</div>
+  <div class="dec nm nm2 r" style="--d:2.5s">Akbar Siddiqui</div>
+  <div class="s14 r" style="--d:2.7s;margin-top:calc(var(--u)*4)">Son of Mr. [FATHER] &amp; Mrs. [MOTHER] Siddiqui</div>
+  <div class="pg r" style="--d:3s"><i></i>PROGRAMME<i></i></div>
+  <div class="row r" style="--d:3.3s">
+    <div><div class="dec h">Sangeet</div><div class="s16" style="margin-top:calc(var(--u)*4)">4th April</div><div class="s15">Night onwards</div></div>
+    <div><div class="dec h">Mehndi</div><div class="s16" style="margin-top:calc(var(--u)*4)">3rd April</div><div class="s15">Night onwards</div></div>
+  </div>
+  <div class="r" style="--d:3.6s;margin-top:calc(var(--u)*12)"><div class="dec h">Wedding Ceremony</div><div class="s16" style="margin-top:calc(var(--u)*4)">5th April</div></div>
+  <div class="r" style="--d:3.9s;margin-top:calc(var(--u)*12);line-height:1.35"><b style="color:#6e1b28">Venue:</b> Shehnai Palace, Firozabad<br><a class="go" href="https://www.google.com/maps/search/?api=1&query=Shehnai+Palace+Firozabad" target="_blank" rel="noopener">GET DIRECTIONS</a></div>
+  <div class="r" style="--d:4.2s;margin-top:calc(var(--u)*14);color:#6e1b28;line-height:1.35">With best regards,<br>All the Family and Relatives</div>
+</div>
+<div class="orn r" style="--d:4.4s"><b></b><b></b><b></b></div>
+<div id="fx"></div>
+</div>
+</div>
+
+<script>
+(function(){
+var NS="http://www.w3.org/2000/svg",card=document.getElementById("card"),fx=document.getElementById("fx"),mg=document.getElementById("mg");
+function rnd(a,b){return a+Math.random()*(b-a)}
+/* marigold garland strands along the top */
+for(var i=0;i<13;i++){var g=document.createElementNS(NS,"g");g.setAttribute("class","sway");g.style.animationDelay=(-rnd(0,5)).toFixed(1)+"s";
+var x=24+i*46,n=3+Math.floor(rnd(1,5));
+var l=document.createElementNS(NS,"line");l.setAttribute("x1",x);l.setAttribute("x2",x);l.setAttribute("y1",0);l.setAttribute("y2",n*15);l.setAttribute("stroke","#b98a3a");l.setAttribute("stroke-width","1");g.appendChild(l);
+for(var k=0;k<n;k++){var c=document.createElementNS(NS,"circle");c.setAttribute("cx",x);c.setAttribute("cy",8+k*15);c.setAttribute("r",7);c.setAttribute("fill",k%2?"#f5a623":"#e8791e");g.appendChild(c)}
+mg.appendChild(g)}
+/* petals + sparkles */
+for(var j=0;j<18;j++){var p=document.createElement("div");p.className="p";var s=rnd(9,16);
+p.style.cssText="left:"+rnd(0,100).toFixed(1)+"%;width:calc(var(--u)*"+s.toFixed(1)+");height:calc(var(--u)*"+(s*.75).toFixed(1)+");--x:"+rnd(-90,90).toFixed(0)+";animation-duration:"+rnd(9,16).toFixed(1)+"s;animation-delay:"+(-rnd(0,14)).toFixed(1)+"s";fx.appendChild(p)}
+for(var m=0;m<22;m++){var q=document.createElement("div");q.className="sp";q.style.cssText="left:"+rnd(6,94).toFixed(1)+"%;top:"+rnd(4,96).toFixed(1)+"%;animation-delay:"+(-rnd(0,3)).toFixed(1)+"s;animation-duration:"+rnd(2,4).toFixed(1)+"s";fx.appendChild(q)}
+document.getElementById("go").addEventListener("click",function(){var ov=document.getElementById("ov");ov.classList.add("gone");document.getElementById("stage").classList.add("open");setTimeout(function(){ov.remove()},1100)});
+})();
+</script>
+</body>
+</html>
